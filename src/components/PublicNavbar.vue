@@ -15,7 +15,7 @@
             @click="handleLogin"
             class="btn btn-link btn-md text-neutral-content text-base no-animation hover:text-primary normal-case"
           >
-            Entre
+            Entre ou Cadastre-se
           </button>
         </div>
       </div>

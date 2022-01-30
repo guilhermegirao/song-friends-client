@@ -43,7 +43,7 @@ export default createStore({
         }
       }
 
-      if (!exists) state.matches.push(payload);
+      if (!exists) state.matches = [payload].concat(state.matches);
     },
   },
   actions: {

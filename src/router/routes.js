@@ -1,4 +1,6 @@
 import Home from "@/views/Home.vue";
+import LoginGuest from "@/views/LoginGuest.vue";
+import RegisterGuest from "@/views/RegisterGuest.vue";
 import NotFound from "@/views/NotFound.vue";
 import AuthCallback from "@/views/auth/AuthCallback.vue";
 import AppIndex from "@/views/app/Index.vue";
@@ -10,6 +12,14 @@ const routes = [
   {
     path: "/",
     component: Home,
+  },
+  {
+    path: "/login/guest",
+    component: LoginGuest,
+  },
+  {
+    path: "/register/guest",
+    component: RegisterGuest,
   },
   {
     path: "/auth/callback",

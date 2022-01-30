@@ -7,7 +7,7 @@ import BaseFooter from "@/components/BaseFooter.vue";
   <public-navbar />
   <div class="hero bg-green text-blue" style="min-height: calc(95vh - 80px)">
     <div class="text-center hero-content">
-      <div class="max-w-xl">
+      <div class="max-w-xl flex flex-col items-center">
         <h1 class="mb-7 text-7xl font-bold">
           Faça amigos com...
           <span class="underline decoration-wavy"> músicas</span>!
@@ -20,8 +20,17 @@ import BaseFooter from "@/components/BaseFooter.vue";
           type="button"
           class="btn btn-primary btn-wide rounded-full"
         >
-          Cadastre-se
+          <img
+            src="/images/spotify-icon.svg"
+            alt="Ícone Spotify"
+            class="w-[20px] h-[20px] mr-2"
+          />
+          Entre ou Cadastre-se
         </button>
+        <span class="my-2"> ou </span>
+        <a href="/login/guest" class="underline underline-offset-1">
+          Entre como convidado
+        </a>
       </div>
     </div>
   </div>
