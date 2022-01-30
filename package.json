@@ -9,8 +9,10 @@
   "dependencies": {
     "axios": "^0.24.0",
     "js-base64": "^3.7.2",
+    "socket.io-client": "^4.4.1",
     "vue": "^3.2.26",
     "vue-router": "^4.0.12",
+    "vue-socket.io-extended": "^5.0.0-alpha.5",
     "vuex": "^4.0.0-0",
     "vuex-persistedstate": "^4.1.0"
   },

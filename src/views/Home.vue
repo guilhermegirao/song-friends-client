@@ -1,10 +1,10 @@
 <script setup>
 import PublicNavbar from "@/components/PublicNavbar.vue";
-import Footer from "@/components/Footer.vue";
+import BaseFooter from "@/components/BaseFooter.vue";
 </script>
 
 <template>
-  <PublicNavbar />
+  <public-navbar />
   <div class="hero bg-green text-blue" style="min-height: calc(95vh - 80px)">
     <div class="text-center hero-content">
       <div class="max-w-xl">
@@ -25,13 +25,17 @@ import Footer from "@/components/Footer.vue";
       </div>
     </div>
   </div>
-  <Footer />
+  <base-footer />
 </template>
 
 <script>
 import { baseURL } from "@/utils/api";
 
 export default {
+  components: { PublicNavbar, BaseFooter },
+  mounted() {
+    if (this.$store.getters.isAuthenticated) this.$router.replace("/app");
+  },
   methods: {
     handleLogin: async () => {
       try {

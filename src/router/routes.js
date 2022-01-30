@@ -5,7 +5,6 @@ import AppIndex from "@/views/app/Index.vue";
 import Matches from "@/views/app/Matches.vue";
 import Messages from "@/views/app/Messages.vue";
 import ProfileIndex from "@/views/app/Profile/Index.vue";
-import ProfileEdit from "@/views/app/Profile/Edit.vue";
 
 const routes = [
   {
@@ -27,18 +26,13 @@ const routes = [
     meta: { requiresAuth: true },
   },
   {
-    path: "/app/Messages",
+    path: "/app/messages/:id",
     component: Messages,
     meta: { requiresAuth: true },
   },
   {
-    path: "/app/profile",
+    path: "/app/profile/:id?",
     component: ProfileIndex,
-    meta: { requiresAuth: true },
-  },
-  {
-    path: "/app/profile/edit",
-    component: ProfileEdit,
     meta: { requiresAuth: true },
   },
   {
