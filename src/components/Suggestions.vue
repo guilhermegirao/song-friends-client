@@ -1,8 +1,3 @@
-<script setup>
-import UserCard from "@/components/UserCard.vue";
-import api from "@/utils/api";
-</script>
-
 <template>
   <div class="btn btn-lg btn-circle loading" v-if="loading"></div>
   <div
@@ -48,6 +43,9 @@ import api from "@/utils/api";
 </template>
 
 <script>
+import UserCard from "@/components/UserCard.vue";
+import api from "@/utils/api";
+
 export default {
   components: { UserCard },
   data() {

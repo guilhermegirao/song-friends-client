@@ -1,8 +1,3 @@
-<script setup>
-import PublicNavbar from "@/components/PublicNavbar.vue";
-import BaseFooter from "@/components/BaseFooter.vue";
-</script>
-
 <template>
   <public-navbar />
   <div class="hero bg-green text-blue" style="min-height: calc(95vh - 80px)">
@@ -38,6 +33,8 @@ import BaseFooter from "@/components/BaseFooter.vue";
 </template>
 
 <script>
+import PublicNavbar from "@/components/PublicNavbar.vue";
+import BaseFooter from "@/components/BaseFooter.vue";
 import { baseURL } from "@/utils/api";
 
 export default {

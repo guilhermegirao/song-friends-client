@@ -1,7 +1,3 @@
-<script setup>
-import BaseFooter from "@/components/BaseFooter.vue";
-</script>
-
 <template>
   <div class="hero bg-blue min-h-screen text-green">
     <div class="text-center hero-content">
@@ -19,3 +15,11 @@ import BaseFooter from "@/components/BaseFooter.vue";
   </div>
   <base-footer />
 </template>
+
+<script>
+import BaseFooter from "@/components/BaseFooter.vue";
+
+export default {
+  components: { BaseFooter },
+};
+</script>

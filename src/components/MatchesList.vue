@@ -1,8 +1,3 @@
-<script setup>
-import { mapState } from "vuex";
-import api from "@/utils/api";
-</script>
-
 <template>
   <div
     class="flex flex-col h-full overflow-y-auto"
@@ -60,6 +55,9 @@ import api from "@/utils/api";
 </template>
 
 <script>
+import { mapState } from "vuex";
+import api from "@/utils/api";
+
 export default {
   data() {
     return {

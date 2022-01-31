@@ -1,13 +1,3 @@
-<script setup>
-import Container from "@/components/Container.vue";
-import PrivateNavbar from "@/components/PrivateNavbar.vue";
-import UserCard from "@/components/UserCard.vue";
-import api from "@/utils/api";
-import PrivateNavbarMobile from "@/components/PrivateNavbarMobile.vue";
-import BottomBar from "@/components/BottomBar.vue";
-import SocketWrapper from "@/components/SocketWrapper.vue";
-</script>
-
 <template>
   <socket-wrapper>
     <container>
@@ -25,6 +15,14 @@ import SocketWrapper from "@/components/SocketWrapper.vue";
 </template>
 
 <script>
+import Container from "@/components/Container.vue";
+import PrivateNavbar from "@/components/PrivateNavbar.vue";
+import UserCard from "@/components/UserCard.vue";
+import api from "@/utils/api";
+import PrivateNavbarMobile from "@/components/PrivateNavbarMobile.vue";
+import BottomBar from "@/components/BottomBar.vue";
+import SocketWrapper from "@/components/SocketWrapper.vue";
+
 export default {
   components: {
     Container,

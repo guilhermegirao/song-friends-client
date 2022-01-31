@@ -1,7 +1,3 @@
-<script setup>
-import MatchesList from "@/components/MatchesList.vue";
-</script>
-
 <template>
   <aside
     class="md:flex hidden min-h-full relative md:min-w-[325px] md:max-w-[350px] w-full max-h-screen basis-1/4 bg-neutral-focus flex flex-col border-r border-stone-800"
@@ -54,6 +50,8 @@ import MatchesList from "@/components/MatchesList.vue";
 </template>
 
 <script>
+import MatchesList from "@/components/MatchesList.vue";
+
 export default {
   components: { MatchesList },
   data() {
@@ -72,4 +70,4 @@ export default {
     },
   },
 };
-</script>
+<script/>
